@@ -1,4 +1,5 @@
-# @dexare/logger
+<img src="https://get.snaz.in/5BaZQKK.png" height="50">
+
 A [Dexare](https://github.com/Dexare/Dexare) module for colorful logging with [winston](https://npm.im/winston) and [chalk](https://npm.im/chalk).
 
 ```sh
