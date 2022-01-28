@@ -10,7 +10,7 @@ export interface LoggerConfig extends BaseConfig {
 
 export interface LoggerModuleOptions {
   level?: string;
-  inspectOptions?: NodeJS.InspectOptions;
+  inspectOptions?: any;
 }
 
 const colorPool = [
