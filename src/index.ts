@@ -132,7 +132,7 @@ export default class LoggerModule<T extends DexareClient<LoggerConfig>> extends 
       } else text.push(arg);
     }
 
-    winston.loggers.get(moduleName).log(level, text.join(' '), extra);
+    winston.loggers.get(moduleName).log(level as any, text.join(' '), extra);
   }
 
   private _centrePad(text: string, length: number) {
