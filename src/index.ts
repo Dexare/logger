@@ -87,7 +87,8 @@ export default class LoggerModule<T extends DexareClient<LoggerConfig>> extends 
           format.printf((info) => {
             const lClk = this.levelColors[info.level] || chalk.yellow.bgBlack;
             const mClk =
-              this.moduleColors[moduleName] || colorPool[this._hashCode(moduleName) % colorPool.length];
+              this.moduleColors[moduleName] ||
+              colorPool[Math.abs(this._hashCode(moduleName)) % colorPool.length];
             return (
               mClk(` ${moduleName} `) +
               chalk.black.bgWhite(` ${dayjs().format('MM/DD HH:mm:ss')} `) +
