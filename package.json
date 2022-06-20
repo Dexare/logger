@@ -33,7 +33,7 @@
   "dependencies": {
     "chalk": "4",
     "dayjs": "^1.10.7",
-    "dexare": "^2.2.1",
+    "dexare": "^3.0.0",
     "winston": "^3.5.0"
   },
   "devDependencies": {
